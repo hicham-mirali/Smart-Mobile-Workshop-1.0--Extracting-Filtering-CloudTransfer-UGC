@@ -1,0 +1,5 @@
+Ici sont regroupés les différents codes pythons utilisés dans le cadre de mon stage de 4ème année au sein de l'ONCF:
+dateTime.py : Ce code a pour but de régler la date et l'heure de l'US
+panneUGC2.py : Ce code effectue l'algorithme nécessaire pour récupérer les dernières pannes relevées par l'US, les filtre, et les envoie au Cloud par protocole MQTT.
+releve.py : Ce code effectue le relevé du bloc mémoire 6 (contenant les dernières informations relevées) de l'US, inscrit ce code sur un fichier texte et l'envoie par mail à l'adresse renseignée.
+TOUS CES CODES DOIVENT ETRE EXECUTES AVEC EN CONNECTANT LA RASPBERRY AU PORT COM1 DE L'US!!
