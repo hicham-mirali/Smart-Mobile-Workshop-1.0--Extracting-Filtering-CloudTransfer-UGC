@@ -254,8 +254,6 @@ def mqtt_device_demo(args):
 						}
 	
 						payload = json.dumps(jsonData)
-                				#payload = '{}/{}-payload-'.format(args.registry_id, args.device_id)+ payload_i
-                				#payload = payload_i
                 				print('Publishing message :' ) + payload 
                 				seconds_since_issue = (datetime.datetime.utcnow() - jwt_iat).seconds
                 				if seconds_since_issue > 60 * jwt_exp_mins:
