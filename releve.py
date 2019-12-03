@@ -68,8 +68,8 @@ else :
 #Envoi du relevé par e-mail
 subject = "Relevé US"
 body = "Veuillez trouver ci-joint le relevé de l'US comme demandé."
-sender_email = "erac.ugc@gmail.com"
-receiver_email = "hichamirali@gmail.com"
+sender_email = "XXX"
+receiver_email = "XXX"
 password = "eracugc0!"
 
 # Create a multipart message and set headers
@@ -104,11 +104,6 @@ message.attach(part)
 text = message.as_string()
 
 # Log in to server using secure context and send email
-
-#context = ssl.create_default_context()
-#with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-#    server.login(sender_email, password)
-#    server.sendmail(sender_email, receiver_email, text)
 
 mailserver = smtplib.SMTP('smtp.gmail.com',587)
 # identify ourselves to smtp gmail client
